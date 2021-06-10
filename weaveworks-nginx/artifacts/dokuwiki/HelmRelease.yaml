@@ -1,0 +1,17 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  creationTimestamp: null
+  name: pctl-profile-weaveworks-nginx-dokuwiki
+  namespace: 82ad5978-3f84-4dc2-b7ae-520e14c99ddd
+spec:
+  chart:
+    spec:
+      chart: dokuwiki
+      sourceRef:
+        kind: HelmRepository
+        name: pctl-profile-profiles-examples-dokuwiki
+        namespace: 82ad5978-3f84-4dc2-b7ae-520e14c99ddd
+      version: 11.1.6
+  interval: 0s
+status: {}
