@@ -1,0 +1,11 @@
+apiVersion: weave.works/v1alpha1
+kind: ProfileSubscription
+metadata:
+  creationTimestamp: null
+  name: pctl-profile
+  namespace: f77572af-054e-4530-a715-72e4b7e82c50
+spec:
+  branch: local_clone_test
+  path: weaveworks-nginx
+  profileURL: https://github.com/weaveworks/profiles-examples
+status: {}
