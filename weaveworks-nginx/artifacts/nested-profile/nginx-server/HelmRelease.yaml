@@ -1,0 +1,16 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  creationTimestamp: null
+  name: pctl-profile-bitnami-nginx-nginx-server
+  namespace: fd80a13e-2ad8-4238-aa66-6770a30325fe
+spec:
+  chart:
+    spec:
+      chart: /var/folders/gh/m47qw8n917n9gym8n_7ttlsc0000gn/T/pctl_test_install_generate_branch_01144622710/weaveworks-nginx/artifacts/nested-profile/nginx-server/nginx/chart
+      sourceRef:
+        kind: GitRepository
+        name: git-repo-name
+        namespace: fd80a13e-2ad8-4238-aa66-6770a30325fe
+  interval: 0s
+status: {}

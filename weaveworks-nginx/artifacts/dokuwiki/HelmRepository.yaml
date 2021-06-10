@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  creationTimestamp: null
+  name: pctl-profile-profiles-examples-dokuwiki
+  namespace: fd80a13e-2ad8-4238-aa66-6770a30325fe
+spec:
+  interval: 0s
+  url: https://charts.bitnami.com/bitnami
+status: {}
