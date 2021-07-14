@@ -6,7 +6,7 @@ metadata:
 spec:
   prune: true
   interval: 10m
-  path: example/folder-2/
+  path: example/folder-2/helm-chart/
   sourceRef:
     kind: GitRepository
     name: flux-system
